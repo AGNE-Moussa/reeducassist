@@ -1,0 +1,39 @@
+# --- Secrets et configuration locale ---
+# Toute la configuration passe par des variables d'environnement.
+# Seul le modèle .env.example est versionné, sans aucune valeur réelle.
+.env
+.env.*
+!.env.example
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# --- Node / frontend ---
+node_modules/
+.npm/
+.vite/
+coverage/
+npm-debug.log*
+
+# --- Éditeurs et systèmes ---
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# --- Claude Code ---
+# .claude/settings.json est partagé ; les réglages personnels restent locaux.
+.claude/settings.local.json
